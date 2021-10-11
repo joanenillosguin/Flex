@@ -1,0 +1,90 @@
+
+/* Gloobal setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: 1.4;
+}
+/* global style  for nav only*/
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/* main-nav */
+#main-nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background:#082032;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+#main-nav ul {
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+#main-nav ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.025rem;
+}
+/* pseudo code */
+#main-nav ul li a:hover{
+    background: rgba(255, 255, 255, 0.4);
+    color: #ffb740;
+}
+/* header */
+#showcase{
+    background:url(/image/tree-736885__480.webp) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+/* overlay */
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+#showcase .showcase-content h1 {
+    border-left: 4px solid #fff;
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;  
+}
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 600px;
+}
+.btn {
+    display:inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social{
+    display: flex;
+}
+.social i {
+    margin: 5px;
+}
